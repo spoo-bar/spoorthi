@@ -69,3 +69,7 @@ main {
   height: auto;
 }
 
+.social-icons {
+  font-size: x-large;
+  letter-spacing: 10px;
+}
