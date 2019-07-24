@@ -12,7 +12,7 @@
 <body>
     <div id="particles-js"></div>
     <main>
-        <div class="content">
+        <div id="main-content" class="content">
             <div class="row">
                 <div class="column">
                     <div class="row">
@@ -29,7 +29,7 @@
             <div class="row">
                 <a href="http://blog.spoorthis.com">Blog</a> &middot;
                 <a>Resume</a> &middot;
-                <a>Projects</a>
+                <a href="#" onclick="showPortfolio(); return false;">Projects</a>
             </div>
             <div class="row" style="margin-top: 50px;">
                 <div class="social-icons">
@@ -45,11 +45,44 @@
                 </div>
             </div>
         </div>
+        <div id="portfolio-content" class="content" style="display: none;">
+            <div class="row">
+                <h3>Projects</h3>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p>First</p>
+                </div>
+                <div class="column">
+                    <p>Second</p>
+                </div>
+                <div class="column">
+                    <p>Third</p>
+                </div>
+                <div class="column">
+                    <p>Fourth</p>
+                </div>
+            </div>
+            <div class="row">
+                <a href="#" onclick="hidePortfolio(); return false;">⬅ ◀ back</a>
+            </div>
+        </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
         particlesJS.load('particles-js', 'assets/particles.json', function () {
         });
+
+        function showPortfolio() {
+            document.getElementById("main-content").style.display = "none";
+            document.getElementById("portfolio-content").style.display = "block";
+        }
+
+        function hidePortfolio() {
+            document.getElementById("main-content").style.display = "block";
+            document.getElementById("portfolio-content").style.display = "none";
+        }
+
     </script>
 </body>
 
