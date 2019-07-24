@@ -79,3 +79,31 @@ main {
   color: azure;
   text-decoration: none; 
 }
+
+#main-links {
+  margin-top: 100px;
+}
+
+#main-links a, #main-links a:visited {
+  text-decoration: none;
+  color: azure;
+  
+  border: 1px solid azure;
+  padding: 10px 20px;
+  cursor: pointer;
+  float: left;
+}
+
+#main-links a:not(:last-child) {
+  border-right: none;
+}
+
+#main-links:after {
+  content: "";
+  clear: both;
+  display: table
+}
+
+#desc-text {
+  font-size: 18px;;
+}
