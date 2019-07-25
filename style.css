@@ -73,6 +73,8 @@ main {
 .social-icons {
   font-size: x-large;
   letter-spacing: 10px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .social-icons a, .social-icons a:visited {
