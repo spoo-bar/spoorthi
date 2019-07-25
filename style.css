@@ -34,7 +34,8 @@ main {
 
 .column {
   float: left;
-  width: 50%;
+  width: 48%;
+  padding-right: 5px;
 }
 
 
@@ -108,4 +109,11 @@ main {
 
 #desc-text {
   font-size: 18px;;
+}
+
+.back-button {
+  float: right;
+  color: azure;
+  text-decoration: none;
+  font-size: small;
 }
