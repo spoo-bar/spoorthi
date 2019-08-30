@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -16,7 +16,7 @@
             <div class="row">
                 <div class="column">
                     <div class="row">
-                        <img src="https://via.placeholder.com/600x400.png" class="responsive" />
+                        <img src="http://spoorthis.com/assets/images/spoorthi.jpg" class="responsive" alt="Spoorthi Satheesha Photo" />
                     </div>
                 </div>
                 <div class="column">
@@ -25,9 +25,9 @@
                         <p id="desc-text">Developer &middot; Gamer &middot; Student @ TU Berlin</p>
                     </div>
                     <div id="main-links" class="row">
-                        <a href="http://blog.spoorthis.com">Blog</a>
+                        <a href="http://blog.spoorthis.com" target="_blank" rel="noopener">Blog</a>
                         <a>Resume</a>
-                        <a href="#" onclick="showPortfolio(); return false;">Projects</a>
+                        <!-- <a href="#" onclick="showPortfolio(); return false;">Projects</a> -->
                     </div>
                 </div>
             </div>
@@ -36,19 +36,24 @@
                 <div class="social-icons">
                     <a class="socicon-mail" href="mailto:s.spoorti@gmail.com"></a>
                     &middot;
-                    <a class="socicon-linkedin" href="https://www.linkedin.com/in/spoorthis" target="_blank"></a>
+                    <a class="socicon-linkedin" href="https://www.linkedin.com/in/spoorthis" target="_blank" rel="noopener"></a>
                     &middot;
-                    <a class="socicon-github" href="https://github.com/spoon611" target="_blank"></a>
+                    <a class="socicon-github" href="https://github.com/spoon611" target="_blank" rel="noopener"></a>
                     &middot;
-                    <a class="socicon-telegram" href="https://t.me/spoon611" target="_blank"></a>
+                    <a class="socicon-telegram" href="https://t.me/spoon611" target="_blank" rel="noopener"></a>
                     &middot;
-                    <a class="socicon-twitch" href="https://www.twitch.tv/spoobar" target="_blank"></a>
+                    <a class="socicon-twitch" href="https://www.twitch.tv/spoobar" target="_blank" rel="noopener"></a>
                 </div>
             </div>
         </div>
         <div id="portfolio-content" class="content" style="display: none;">
             <div class="row">
-                <h2>Projects</h2>
+                <div class="column">
+                    <h2>Projects</h2>
+                </div>
+                <div class="column">
+                    <h4><a class="back-button" href="#" onclick="hidePortfolio(); return false;">◀ Back</a></h4>
+                </div>
             </div>
             <div class="row">
                 <div class="column">
@@ -72,7 +77,7 @@
                     <h3>Biffy</h3>
                     <div class="row">
                         <div class="column">
-                            <img src="https://via.placeholder.com/200x200.png" class="responsive" />
+                            <img src="/assets/images/biffy.png" class="responsive" />
                         </div>
                         <div class="column">
                             <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -137,9 +142,6 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <a href="#" onclick="hidePortfolio(); return false;">⬅ ◀ back</a>
-            </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
@@ -157,6 +159,20 @@
             document.getElementById("portfolio-content").style.display = "none";
         }
 
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "url": "http://www.spoorthis.com",
+            "name": "Spoorthi Satheesha",
+            "telephone": "+918105542987",
+            "image": "http://spoorthis.com/assets/images/spoorthi.jpg",
+            "jobTitle": "Software Developer",
+            "gender": "Female",
+            "email": "s.spoorti@gmail.com",
+            "birthDate": "1995-11-06T18:18:00+0500"
+          }            
     </script>
 </body>
 

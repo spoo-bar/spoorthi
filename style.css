@@ -74,7 +74,7 @@ main {
 .social-icons {
   font-size: x-large;
   letter-spacing: 10px;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -105,6 +105,32 @@ main {
   content: "";
   clear: both;
   display: table
+}
+
+@media screen and (max-width: 800px) {
+  .social-icons {
+    letter-spacing: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .social-icons {
+    letter-spacing: 5px;
+  }
+
+  #main-links {
+    margin-top: 50px;
+  }  
+}
+
+@media screen and (max-width: 400px) {
+  .social-icons {
+    letter-spacing: 4px;
+  }
+
+  #main-links {
+    margin-top: 50px;
+  }  
 }
 
 #desc-text {
