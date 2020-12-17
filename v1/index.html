@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spoorthi Satheesha</title>
+    <meta property="og:title" content="Spoorthi Satheesha" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:profile:first_name" content="Spoorthi" />
+    <meta property="og:profile:last_name" content="Satheesha" />
+    <meta property="og:profile:gender" content="female" />
+    <meta property="og:url" content="http://spoorthis.com" />
+    <meta property="og:image" content="http://spoorthis.com/image/spoorthi.jpg" />
+    <meta property="og:description" content="I am a masters student based in Stockholm majoring in Cloud and Network Infrastructures, with a focus on Privacy and Data Security. I specialize in building web applications on the Microsoft Stack." />
+    <link rel="stylesheet" type="text/css" href="css/socicon.css">
+    <style>
+        body {
+            background-color: #212121;
+            color: #fafafa;
+            overflow-x: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+
+        .content {
+            margin: auto;
+            padding: 20px;
+            min-width: 50%;
+            max-width: 80%;
+        }
+
+        .row {
+            margin: 20px;
+        }
+
+        .column {
+            float: left;
+            width: 48%;
+            padding-right: 5px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .responsive {
+            width: 90%;
+            height: auto;
+        }
+
+        .social-icons {
+            font-size: x-large;
+            letter-spacing: 10px;
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .social-icons a,
+        .social-icons a:visited {
+            color: #fafafa;
+            text-decoration: none;
+        }
+
+        #main-links {
+            margin-top: 50px;
+        }
+
+        #main-links a,
+        #main-links a:visited {
+            text-decoration: none;
+            color: #fafafa;
+            border: 1px solid #fafafa;
+            padding: 10px 20px;
+            cursor: pointer;
+            float: left;
+        }
+
+        #main-links a:not(:last-child) {
+            border-right: none;
+        }
+
+        #main-links:after {
+            content: "";
+            clear: both;
+            display: table
+        }
+
+        @media screen and (max-width: 800px) {
+            .social-icons {
+                letter-spacing: 10px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .social-icons {
+                letter-spacing: 5px;
+            }
+
+            #main-links {
+                margin-top: 50px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .social-icons {
+                letter-spacing: 4px;
+            }
+
+            #main-links {
+                margin-top: 50px;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .column {
+                width: 80%;
+            }
+
+            main {
+                margin-top: 100px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+
+            main {
+                margin-top: 75px;
+            }
+        }
+
+        .card {
+            transition: 0.3s;
+        }
+
+        .card-column {
+            float: left;
+            width: 30%;
+            padding-right: 20px;
+        }
+
+        .card-container,
+        .card-container a {
+            color: #fafafa;
+            text-decoration: none;
+        }
+
+        .card-container a {
+            padding-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="main-content" class="content">
+            <div class="row">
+                <div class="column">
+                    <div class="row">
+                        <img src="image/spoorthi.jpg" class="responsive"
+                            alt="Spoorthi Satheesha Photo" style="width: 99%; border-radius: 49%;" />
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="row">
+                        <br />
+                        <h2>Hey! I'm Spoorthi Satheesha</h2>
+                        <p>I am a masters student based in Stockholm majoring in Cloud and Network Infrastructures, with
+                            a focus on Privacy and Data Security.</p>
+                        <p>I specialize in building web applications on the Microsoft Stack.</p>
+                        <p>In spare time, I love travelling, hiking, binge-watching and playing Overwatch.</p>
+                    </div>
+                    <div id="main-links" class="row">
+                        <a href="http://blog.spoorthis.com" target="_blank" rel="noopener">Blog</a>
+                        <a>Resume</a>
+                        <a href="#" onclick="showProjects(); return false;">Projects</a>
+                    </div>
+                    <div class="row" style="margin-top: 50px;">
+                        <div class="social-icons">
+                            <a class="socicon-mail" href="mailto:s.spoorti@gmail.com"></a>
+                            &middot;
+                            <a class="socicon-linkedin" href="https://www.linkedin.com/in/spoorthis" target="_blank"
+                                rel="noopener"></a>
+                            &middot;
+                            <a class="socicon-github" href="https://github.com/spoon611" target="_blank"
+                                rel="noopener"></a>
+                            &middot;
+                            <a class="socicon-telegram" href="https://t.me/spoon611" target="_blank" rel="noopener"></a>
+                            &middot;
+                            <a class="socicon-twitter" href="https://twitter.com/spoon611" target="_blank"
+                                rel="noopener"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <img src="small.jpg" id="image">
+
+        <script>
+                
+                    window.onload = function() {
+                        var img = new Image(); 
+                    img.onload = function() { 
+                    change_image(); 
+                    } 
+                    img.src = "small.jpg";  
+
+                    function change_image() {
+                        document.getElementById("image").src = "big.jpg";
+                    }
+                    };
+
+        </script> -->
+        <div id="projects-content" class="content">
+            <div class="row">
+                <h2>Projects</h2>
+                <div class="card-column">
+                    <div class="card">
+                        <img src="image/codewithtodoist.png" alt="Screenshot Code with Todoist" style="width:100%">
+                        <div class="card-container">
+                            <h4><b>code-with-todoist</b></h4>
+                            <p>Todoist extension for vscode. Supports associating Todo items with vscode workspaces</p>
+                            <p><small>#opensource #productivity</small></p>
+                            <p><a class="socicon-internet" href="https://marketplace.visualstudio.com/items?itemName=spoorthi.code-with-todoist" target="_blank"
+                                        rel="noopener"></a> <a class="socicon-github" href="https://github.com/spoon611/code-with-todoist"
+                                        target="_blank" rel="noopener"></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-column">
+                    <div class="card">
+                        <img src="image/covid19.png" alt="Avatar" style="width:100%">
+                        <div class="card-container">
+                            <h4><b>covid19-grapher</b></h4>
+                            <p>Todoist extension for vscode. Supports associating Todo items with vscode workspaces</p>
+                            <p><small>#opensource #productivity</small></p>
+                            <p><a class="socicon-internet" href="https://github.com/spoon611" target="_blank"
+                                        rel="noopener"></a> <a class="socicon-github" href="https://github.com/spoon611"
+                                        target="_blank" rel="noopener"></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-column">
+                    <div class="card">
+                        <img src="http://spoorthis.com/assets/images/spoorthi.jpg" alt="Avatar" style="width:100%">
+                        <div class="card-container">
+                            <h4><b>probase</b></h4>
+                            <p>Todoist extension for vscode. Supports associating Todo items with vscode workspaces</p>
+                            <p><small>#opensource #productivity</small></p>
+                            <p><a class="socicon-internet" href="https://github.com/spoon611" target="_blank"
+                                        rel="noopener"></a> <a class="socicon-github" href="https://github.com/spoon611"
+                                        target="_blank" rel="noopener"></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-column">
+                    <div class="card">
+                        <img src="http://spoorthis.com/assets/images/spoorthi.jpg" alt="Avatar" style="width:100%">
+                        <div class="card-container">
+                            <h4><b>PEng20</b></h4>
+                            <p>Todoist extension for vscode. Supports associating Todo items with vscode workspaces</p>
+                            <p><small>#opensource #productivity</small></p>
+                            <p><a class="socicon-internet" href="https://github.com/spoon611" target="_blank"
+                                        rel="noopener"></a> <a class="socicon-github" href="https://github.com/spoon611"
+                                        target="_blank" rel="noopener"></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-column">
+                    <div class="card">
+                        <img src="http://spoorthis.com/assets/images/spoorthi.jpg" alt="Avatar" style="width:100%">
+                        <div class="card-container">
+                            <h4><b>WhatsAppChatParser</b></h4>
+                            <p>Todoist extension for vscode. Supports associating Todo items with vscode workspaces</p>
+                            <p><small>#opensource #productivity</small></p>
+                            <p><a class="socicon-internet" href="https://github.com/spoon611" target="_blank"
+                                        rel="noopener"></a> <a class="socicon-github" href="https://github.com/spoon611"
+                                        target="_blank" rel="noopener"></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-column">
+                    <div class="card">
+                        <img src="http://spoorthis.com/assets/images/spoorthi.jpg" alt="Avatar" style="width:100%">
+                        <div class="card-container">
+                            <h4><b>Biffy</b></h4>
+                            <p>Todoist extension for vscode. Supports associating Todo items with vscode workspaces</p>
+                            <p><small>#opensource #productivity</small></p>
+                            <p><a class="socicon-internet" href="https://github.com/spoon611" target="_blank"
+                                        rel="noopener"></a> <a class="socicon-github" href="https://github.com/spoon611"
+                                        target="_blank" rel="noopener"></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-column">
+                    <div class="card">
+                        <img src="http://spoorthis.com/assets/images/spoorthi.jpg" alt="Avatar" style="width:100%">
+                        <div class="card-container">
+                            <h4><b>OpenDota.NET</b></h4>
+                            <p>Todoist extension for vscode. Supports associating Todo items with vscode workspaces</p>
+                            <p><small>#opensource #productivity</small></p>
+                            <p><a class="socicon-internet" href="https://github.com/spoon611" target="_blank"
+                                        rel="noopener"></a> <a class="socicon-github" href="https://github.com/spoon611"
+                                        target="_blank" rel="noopener"></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-column">
+                    <div class="card">
+                        <img src="http://spoorthis.com/assets/images/spoorthi.jpg" alt="Avatar" style="width:100%">
+                        <div class="card-container">
+                            <h4><b>Research Methodology</b></h4>
+                            <p>Todoist extension for vscode. Supports associating Todo items with vscode workspaces</p>
+                            <p><small>#opensource #productivity</small></p>
+                            <p><a class="socicon-internet" href="https://github.com/spoon611" target="_blank"
+                                        rel="noopener"></a> <a class="socicon-github" href="https://github.com/spoon611"
+                                        target="_blank" rel="noopener"></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+    </main>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "url": "http://www.spoorthis.com",
+            "name": "Spoorthi Satheesha",
+            "givenName": "Spoorthi",
+            "familyName": "Satheesha",
+            "telephone": "+918105542987",
+            "image": "http://spoorthis.com/assets/images/spoorthi.jpg",
+            "jobTitle": "Software Developer",
+            "gender": "Female",
+            "email": "s.spoorti@gmail.com",
+            "birthDate": "1995-11-06T18:18:00+0500"
+          }            
+    </script>
+    <script>
+        function showProjects() {
+            document.getElementById('projects-content').style.display = "block";
+            document.getElementById('main-content').style.display = "none";
+        }
+
+        document.getElementById('projects-content').style.display = "none";
+    </script>
+</body>
+
+</html>
